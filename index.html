@@ -32,13 +32,23 @@
         }
     </script>
 
+    <style>
+        .active{
+            background-color: #b4f461;
+            border: none;
+        }
+        
+    </style>
+
 </head>
 
 <body class="font-primary-font ">
-    <header class=" justify-center">
-        <!-- navbar starts -->
-        <nav
-            class="flex items-center lg:justify-between py-5 flex-col lg:flex-row gap-4 lg:gap-0 lg:px-32 px-5 bg-nav-bg">
+    <header class="justify-center sticky top-0 backdrop-blur-2xl "  >
+        
+        
+
+            <!-- navbar starts -->
+            <nav class="flex items-center lg:justify-between py-5 flex-col lg:flex-row gap-4 lg:gap-0 lg:px-32 px-5 bg-nav-bg" id="navbar">
             <div>
                 <button class="btn bg-primary-color px-7 font-semibold text-xl flex items-center"
                     id="blog_btn">Blog</button>
@@ -59,19 +69,24 @@
         <!-- navbar End -->
 
         <!-- button section start -->
-        <section class="flex justify-center mt-28">
-            <div>
-                <button class="btn bg-primary-color px-7 font-semibold text-xl mr-5" id="donation_blog_btn">Donation</button>
-                <button class="btn border-1 bg-white border-gray-400 px-7 font-semibold text-xl" id="history_section_btn">History</button>
+        <section class="flex justify-center pt-20 pb-5 ">
+            <div class="flex gap-6">
+                <div class=" px-8 py-3 rounded-xl text-center text-xl font-semibold border-2 border-gray-200 active" id="donation_blog_btn">Donation</div>
+
+                <div id="history_section_btn" class="px-8 py-3 rounded-xl text-center text-xl font-semibold border-2 border-gray-200">
+                    History
+                </div>
             </div>
         </section>
         <!-- button section End -->
+        
+        
     </header>
 
-    <main class="lg:px-32 lg:mt-32 px-5 mt-10">
+    <main class="lg:px-32 lg:mt-20 px-5 mt-10">
 
         <!-- donation blog section -->
-        <div class="space-y-5 mb-12 " id="donation_blog_content">
+        <div class="space-y-5 mb-12" id="donation_blog_content">
 
             <!-- noakhali section box -->
             <div class="flex border-2 border-gray-100 p-5 gap-3 lg:gap-6 rounded-xl flex-col lg:flex-row" id="noakhali">
@@ -195,6 +210,7 @@
     <script src="js/blog.js"></script>
     <script src="js/donate.js"></script>
     <script src="js/switching.js"></script>
+   
 </body>
 
 </html>

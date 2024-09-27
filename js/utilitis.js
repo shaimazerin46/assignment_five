@@ -12,4 +12,12 @@ function switchingButtonContent(id){
     document.getElementById('donation_blog_content').classList.add('hidden');
     document.getElementById('history_section').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
+   
+
 }
+function activeButton(id){
+    document.getElementById('donation_blog_btn').classList.remove('active');
+    document.getElementById('history_section_btn').classList.remove('active');
+    document.getElementById(id).classList.add('active')
+}
+
