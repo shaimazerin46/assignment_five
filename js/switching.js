@@ -8,6 +8,4 @@ document.getElementById('history_section_btn').addEventListener('click',function
     activeButton('history_section_btn');
 })
 
-window.addEventListener('scroll', function(){
-    document.getElementById('navbar').classList.remove('bg-nav-bg')
-})
+
