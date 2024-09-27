@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Daisy UI and Tailwind CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/2b9f8771db.js" crossorigin="anonymous"></script>
+
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#b4f461',
+                'color-light': 'rgba(17, 17, 17, 0.4)',
+                'nav-bg': 'rgba(254, 244, 201, 1)'
+              }
+            },
+            fontFamily: {
+                'primary-font': "Lexend",
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="justify-center">
+
+        <!-- nav start -->
+        <nav class="flex items-center lg:justify-between py-5 flex-col lg:flex-row gap-4 lg:gap-0 lg:px-32 px-5 bg-nav-bg"">
+            <div>
+                <button class="btn bg-primary-color px-7 font-semibold text-xl flex items-center" id="home_btn">Home</button>
+            </div>
+            
+            <div class="flex">
+                <img src="assets/logo.png" alt="" class="mr-2">
+                <span class="flex justify-center items-center font-semibold text-xl">Donate Bangladesh</span>
+            </div>
+            <div class="flex">
+                <img src="assets/coin.png" alt="" class="mr-2">
+               <div class="flex items-center font-semibold text-xl">
+                <p class="mr-2">5000</p> 
+                <p>BDT</p>
+               </div>
+            </div>
+        </nav>
+
+        <!-- nav end -->
+    </header>
+
+    <main class="mt-10 lg:mx-32 mx-5">
+        <div class="flex mb-6">
+            <h1 class="mr-2 text-3xl font-bold">Important FAQ</h1>
+            <i class="fa-regular fa-circle-question flex items-center text-3xl rotate-45 "></i>
+        </div>
+
+        <!-- FAQ section -->
+        <div class="collapse collapse-arrow bg-base-200 mb-8">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+                What is Document Object Model(DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each part of the document (such as elements, attributes, and text) is represented as a node in the tree. This structure allows programs to interact with and manipulate the content, structure, and style of a web page dynamically.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-arrow bg-base-200 mb-8">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">how do you select element from DOM?</div>
+            <div class="collapse-content">
+              <p>
+                To select elements from the DOM, you can use various methods in JavaScript, depending on the type of element you want to select. These methods allow you to target elements based on their id, class, tag name, or other attributes.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-arrow bg-base-200 mb-8">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How can you manipulate the DOM using JavaScript?</div>
+            <div class="collapse-content">
+              <p>
+                You can manipulate the DOM using JavaScript to dynamically change the structure, content, and style of web pages.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200 mb-8">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is the difference between querySelector() and querySelectorAll()?</div>
+            <div class="collapse-content">
+              <p>
+                querySelector() selects the first matching element and returns a single element or null if none is found.
+                querySelectorAll() selects all matching elements and returns a NodeList, which can be empty if no matches exist.
+                Use querySelector() for single elements and querySelectorAll() for multiple elements.
+              </p>
+            </div>
+          </div>
+        
+    </main>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
