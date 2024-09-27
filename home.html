@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    <!-- Daisy UI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#b4f461'
+              }
+            },
+            fontFamily: {
+                'primary-font': "Lexend",
+            }
+          }
+        }
+      </script>
+    
 </head>
-<body>
-    <h1>hi</h1>
+<body class="font-primary-font ">
+   <header class="px-32 justify-center">
+    <!-- navbar starts -->
+        <nav class="flex justify-between py-5 flex-col lg:flex-row gap-4 lg:gap-0">
+            <div>
+                <button class="btn bg-primary-color px-7 font-semibold text-xl flex items-center">Blog</button>
+            </div>
+            
+            <div class="flex">
+                <img src="assets/logo.png" alt="" class="mr-2">
+                <span class="flex justify-center items-center font-semibold text-xl">Donate Bangladesh</span>
+            </div>
+            <div class="flex">
+                <img src="assets/coin.png" alt="" class="mr-2">
+               <div class="flex items-center font-semibold text-xl">
+                <p class="mr-2">5000</p> 
+                <p>BDT</p>
+               </div>
+            </div>
+        </nav>
+        <!-- navbar End -->
+
+        <!-- button section start -->
+         <!-- button section End -->
+   </header>
 </body>
 </html>
