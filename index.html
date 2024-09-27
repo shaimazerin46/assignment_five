@@ -61,15 +61,17 @@
         <!-- button section start -->
         <section class="flex justify-center mt-28">
             <div>
-                <button class="btn bg-primary-color px-7 font-semibold text-xl mr-5">Donation</button>
-                <button class="btn border-1 bg-white border-gray-400 px-7 font-semibold text-xl">History</button>
+                <button class="btn bg-primary-color px-7 font-semibold text-xl mr-5" id="donation_blog_btn">Donation</button>
+                <button class="btn border-1 bg-white border-gray-400 px-7 font-semibold text-xl" id="history_section_btn">History</button>
             </div>
         </section>
         <!-- button section End -->
     </header>
 
     <main class="lg:px-32 lg:mt-32 px-5 mt-10">
-        <div class="space-y-5 mb-12">
+
+        <!-- donation blog section -->
+        <div class="space-y-5 mb-12 " id="donation_blog_content">
 
             <!-- noakhali section box -->
             <div class="flex border-2 border-gray-100 p-5 gap-3 lg:gap-6 rounded-xl flex-col lg:flex-row" id="noakhali">
@@ -180,11 +182,19 @@
                 </div>
             </dialog>
         </div>
+        <!-- donation blog section end -->
+
+        <!-- donation history start -->
+        <section id="history_section" class="hidden">
+    
+        </section>
+         <!-- onation history end -->
     </main>
 
-    <script src="js/features.js"></script>
+    <script src="js/utilitis.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/donate.js"></script>
+    <script src="js/switching.js"></script>
 </body>
 
 </html>

@@ -8,3 +8,8 @@ function getElementValueById(id){
     const totalAmountNumber = parseFloat(totalAmount);
     return totalAmountNumber;
 }
+function switchingButtonContent(id){
+    document.getElementById('donation_blog_content').classList.add('hidden');
+    document.getElementById('history_section').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
